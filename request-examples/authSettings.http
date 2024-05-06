@@ -1,0 +1,7 @@
+### GET request to example server
+GET http://192.168.1.16:8111/app/rest/server/authSettings
+Content-Type: application/json
+X-TC-CSRF-Token: 61c1b021-a0af-4463-beb9-bdb11ec6665b
+Accept: application/json
+
+###

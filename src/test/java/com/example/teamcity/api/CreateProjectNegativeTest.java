@@ -1,11 +1,18 @@
 package com.example.teamcity.api;
 
 import com.example.teamcity.api.generators.TestData;
+import com.example.teamcity.api.models.Project;
+import com.example.teamcity.api.requests.UncheckedRequests;
+import com.example.teamcity.api.requests.checked.CheckedBase;
+import com.example.teamcity.api.spec.Specifications;
+import io.restassured.response.Response;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.http.HttpStatus;
 import org.hamcrest.Matchers;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import static com.example.teamcity.api.enums.Endpoint.PROJECT_ENDPOINT;
 
 public class CreateProjectNegativeTest extends BaseApiTest {
 
@@ -98,5 +105,9 @@ public class CreateProjectNegativeTest extends BaseApiTest {
         uncheckedWithSuperUser.getProjectRequest().create(testData.getProject())
                 .then().assertThat().statusCode(HttpStatus.SC_NOT_FOUND)
                 .body(Matchers.containsString("No project found by name or internal/external id 'nonExistingProjectId'."));
+    }
+
+    private Response createUncheckedProjectWithSuperUser(TestData testData) {
+        return (Response) new UncheckedRequests(Specifications.getSpec().superUserSpec(), PROJECT_ENDPOINT).create(testData.getProject());
     }
 }

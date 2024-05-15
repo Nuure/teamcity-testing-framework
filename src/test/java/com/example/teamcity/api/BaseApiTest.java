@@ -14,8 +14,10 @@ import static io.restassured.RestAssured.given;
 
 public class BaseApiTest extends BaseTest {
     public TestDataStorage testDataStorage;
-    public CheckedRequests checkedWithSuperUser = new CheckedRequests(Specifications.getSpec().superUserSpec());
+//    public CheckedRequests checkedWithSuperUser = new CheckedRequests(Specifications.getSpec().superUserSpec());
+    public CheckedRequests checkedWithSuperUser;
     public UncheckedRequests uncheckedWithSuperUser = new UncheckedRequests(Specifications.getSpec().superUserSpec());
+//    public UncheckedRequests uncheckedWithSuperUser;
 
     @BeforeMethod
     public void setupTest() {
@@ -37,4 +39,8 @@ public class BaseApiTest extends BaseTest {
             given().spec(spec).body(authSettings).put("/app/rest/server/authSettings");
         }
     }
+
+//    public void checkedWithSuperUser() {
+//
+//    }
 }

@@ -17,4 +17,10 @@ public class UncheckedRequests {
         this.projectRequest = new UncheckedProject(spec);
         this.buildConfigRequest = new UncheckedBuildConfig(spec);
     }
+
+//    private CheckedBase checkedBase;
+//
+//    public UncheckedRequests(RequestSpecification spec, Endpoint endpoint) {
+//        this.checkedBase = new CheckedBase(spec, endpoint);
+//    }
 }

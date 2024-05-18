@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TestDataStorage {
-    public static TestDataStorage testDataStorage;
-    public List<TestData> testDataList;
+    private static TestDataStorage testDataStorage;
+    private List<TestData> testDataList;
 
     private TestDataStorage() {
         this.testDataList = new ArrayList<>();

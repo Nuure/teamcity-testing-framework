@@ -2,6 +2,7 @@ package com.example.teamcity.ui;
 
 import com.codeborne.selenide.Condition;
 import com.example.teamcity.api.generators.TestData;
+import com.example.teamcity.api.models.Project;
 import com.example.teamcity.ui.pages.admin.CreateNewProject;
 import com.example.teamcity.ui.pages.favorites.ProjectsPage;
 import org.testng.annotations.BeforeMethod;
@@ -19,6 +20,9 @@ public class CreateNewProjectTest extends BaseUiTest {
     private void createUserAndLogin() {
         testData = testDataStorage.addTestData();
         loginAsUser(testData.getUser());
+        String projectName = testData.getProject().getName();
+        String projectNameToId = projectName.substring(0, 5) + projectName.substring(5, 6).toUpperCase() + projectName.substring(6);
+        testData.getProject().setId(projectNameToId.replaceAll("test_", "Test"));
     }
 
     @Test
@@ -29,17 +33,21 @@ public class CreateNewProjectTest extends BaseUiTest {
                 .setupProject(testData.getProject().getName(), testData.getBuildType().getName());
 
         checkNewProjectShownOnFavoritesProjectsPage(testData.getProject().getName());
+        checkCreatedProjectParams(testData.getProject().getId(), testData.getProject().getParentProject().getLocator());
     }
 
     @Test
     public void authorizedUserShouldBeAbleCreateNewProjectAsSubproject() {
-        String firstProjectId = checkedWithSuperUser.getProjectRequest().create(testData.getProject()).getId();
+        TestData secondTestData = testDataStorage.addTestData();
+        Project parentProject = checkedWithSuperUser.getProjectRequest().create(secondTestData.getProject());
+        testData.getProject().setId(secondTestData.getProject().getId() + "_" + testData.getProject().getId());
         new CreateNewProject()
-                .open(firstProjectId)
+                .open(parentProject.getId())
                 .createProjectByUrl(GITHUB_PROJECT_URL)
                 .setupProject(testData.getProject().getName(), testData.getBuildType().getName());
 
         checkNewProjectShownOnFavoritesProjectsPage(testData.getProject().getName());
+        checkCreatedProjectParams(testData.getProject().getId(), secondTestData.getProject().getId());
     }
 
     @Test
@@ -61,5 +69,12 @@ public class CreateNewProjectTest extends BaseUiTest {
                 .getSubprojects()
                 .stream().reduce((first, second) -> second).get()
                 .getHeader().shouldHave(Condition.text(projectName));
+    }
+
+    private void checkCreatedProjectParams(String projectId, String parentProjectId) {
+        Project project = checkedWithSuperUser.getProjectRequest().get(projectId);
+        softy.assertThat(project.getName()).isEqualTo(testData.getProject().getName());
+        softy.assertThat(project.getParentProjectId()).isEqualTo(parentProjectId);
+        softy.assertThat(project.getId()).isEqualTo(projectId);
     }
 }

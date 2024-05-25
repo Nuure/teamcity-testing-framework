@@ -13,14 +13,12 @@ import static com.codeborne.selenide.Selenide.element;
 
 public class StartUpPage extends Page {
     private final SelenideElement acceptLicense = element(Selectors.byId("accept"));
-    private final SelenideElement restoreFromBackupButton = element(Selectors.byId("restoreButton"));
-    private final SelenideElement backFileUploaded = element(Selectors.byId("password"));
     private final SelenideElement proceedButton = element(Selectors.byId("proceedButton"));
     @Getter
     private final SelenideElement header = element(Selectors.byId("password"));
 
     public StartUpPage open() {
-        Selenide.open("/");
+        Selenide.open("/mnt");
         return this;
     }
 

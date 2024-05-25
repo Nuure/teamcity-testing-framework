@@ -32,6 +32,7 @@ public class BaseTest {
         softy.assertAll();
     }
 
+//    @BeforeSuite
     public static void enablePerProjectPermissions() {
         RequestSpecification spec = Specifications.getSpec().superUserSpec();
         AuthSettings authSettings = given().spec(spec)

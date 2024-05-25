@@ -32,9 +32,4 @@ public class BaseUiTest extends BaseTest {
     public void checkErrorText(Errors error) {
         softy.assertThat(getErrorText(error.getErrorType())).isEqualTo(error.getText());
     }
-
-    @BeforeSuite
-    public void enablePermissions() {
-        BaseTest.enablePerProjectPermissions();
-    }
 }

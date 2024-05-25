@@ -4,7 +4,7 @@ import com.codeborne.selenide.Condition;
 import com.example.teamcity.ui.pages.setup.StartUpPage;
 import org.testng.annotations.Test;
 
-public class SetupTest {
+public class SetupTest extends BaseUiTest {
     @Test
     public void setupTeamCityServerTest() {
         new StartUpPage()

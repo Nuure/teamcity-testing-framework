@@ -20,8 +20,8 @@ jobs:
         run: |
           echo "HOST=$(ifconfig | grep -E "([0-9]{1,3}\.){3}[0-9]{1,3}" | grep -v 127.0.0.1 | awk '{ print $2 }' | cut -f2 -d: | head -n1)" >> $GITHUB_ENV
 
-#      - name: Setup host config.properties
-#        run: echo "\nhost=$HOST:8111" >> src/main/resources/config.properties
+      - name: Setup host config.properties
+        run: echo "host=$HOST:8111" > src/main/resources/config.properties
 
       - name: Pull Selenoid Chrome
         run: docker pull selenoid/vnc_chrome:119.0
@@ -58,7 +58,7 @@ jobs:
 
       - name: Set up config property
 #        run: echo "\nsuperUserToken=$SUPER_USER_TOKEN" >> src/main/resources/config.properties
-        run: echo "host=$HOST:8111\nsuperUserToken=$SUPER_USER_TOKEN\nremote=true\nbrowser=firefox" > src/main/resources/config.properties
+        run: echo "\nsuperUserToken=$SUPER_USER_TOKEN\nremote=true\nbrowser=firefox" >> src/main/resources/config.properties
 
       - name: Verify config.properties
         run: cat src/main/resources/config.properties

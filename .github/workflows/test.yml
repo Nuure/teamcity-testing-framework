@@ -58,7 +58,10 @@ jobs:
 
       - name: Set up config property
 #        run: echo "\nsuperUserToken=$SUPER_USER_TOKEN" >> src/main/resources/config.properties
-        run: echo "\nsuperUserToken=$SUPER_USER_TOKEN\nremote=true\nbrowser=firefox" >> src/main/resources/config.properties
+        run: |
+          echo "superUserToken=$SUPER_USER_TOKEN" >> src/main/resources/config.properties
+          echo "remote=true" >> src/main/resources/config.properties
+          echo "browser=firefox" >> src/main/resources/config.properties
 
       - name: Verify config.properties
         run: cat src/main/resources/config.properties

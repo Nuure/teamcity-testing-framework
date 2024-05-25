@@ -50,14 +50,17 @@ jobs:
           -p 8111:8111 \
           jetbrains/teamcity-server:latest
 
-      - name: Setup TeamCity Server
-        run: ./mvnw clean test -Dtest=SetupFirstStartTest#setupTeamCityServerTest
-
       - name: Set up superUserToken environment variable
         run: echo "SUPER_USER_TOKEN=$(docker logs teamcity-server | grep 'Super user authentication token' | tail -n 1 | awk '{print $6}')" >> $GITHUB_ENV
 
       - name: Set up superUserToken config property
         run: echo "superUserToken=$SUPER_USER_TOKEN" >> src/main/resources/config.properties
+
+      - name: Verify config.properties
+        run: cat src/main/resources/config.properties
+
+      - name: Setup TeamCity Server
+        run: ./mvnw clean test -Dtest=SetupTest#setupTeamCityServerTest
 
       - name: Run TeamCity agent
         run: |

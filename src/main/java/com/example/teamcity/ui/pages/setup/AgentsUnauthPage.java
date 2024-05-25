@@ -15,7 +15,7 @@ import static com.codeborne.selenide.Selenide.element;
 public class AgentsUnauthPage extends Page {
     private final SelenideElement authButton = element(new ByAttribute("data-test-authorize-agent", "true"));
     private final SelenideElement authPopup = element(Selectors.byDataTest("ring-popup"));
-    private final SelenideElement authPopupButton = $x("//*[@data-test='cancel']/preceding-sibling::button");
+    private final SelenideElement authPopupButton = $x("//button[@type='submit' and .//span[text()='Authorize']]");
 
     public AgentsUnauthPage open() {
         Selenide.open("/agents/unauthorized");

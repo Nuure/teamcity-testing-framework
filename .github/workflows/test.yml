@@ -85,8 +85,3 @@ jobs:
 
       - name: Run ui tests
         run: ./mvnw test -Dxml-suite=testng-suites/ui-suite.xml
-
-
-          
-
-

@@ -9,23 +9,23 @@ import com.example.teamcity.ui.pages.Page;
 
 import java.time.Duration;
 
+import static com.codeborne.selenide.Selenide.$x;
 import static com.codeborne.selenide.Selenide.element;
 
 public class AgentsUnauthPage extends Page {
     private final SelenideElement authButton = element(new ByAttribute("data-test-authorize-agent", "true"));
     private final SelenideElement authPopup = element(Selectors.byDataTest("ring-popup"));
-
+    private final SelenideElement authPopupButton = $x("//*[@data-test='cancel']/preceding-sibling::button");
 
     public AgentsUnauthPage open() {
         Selenide.open("/agents/unauthorized");
         return this;
     }
 
-    public AgentsUnauthPage authorizeAgent() {
+    public void authorizeAgent() {
         waitUntilPageIsLoaded();
         authButton.click();
         authPopup.shouldBe(Condition.visible, Duration.ofSeconds(30));
-        submit();
-        return this;
+        authPopupButton.click();
     }
 }

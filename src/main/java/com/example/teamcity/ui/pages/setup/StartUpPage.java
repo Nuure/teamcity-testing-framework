@@ -15,7 +15,7 @@ public class StartUpPage extends Page {
     private final SelenideElement acceptLicense = element(Selectors.byId("accept"));
     private final SelenideElement proceedButton = element(Selectors.byId("proceedButton"));
     @Getter
-    private final SelenideElement header = element(Selectors.byId("password"));
+    private final SelenideElement header = element(Selectors.byId("header"));
 
     public StartUpPage open() {
         Selenide.open("/mnt");

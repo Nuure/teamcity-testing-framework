@@ -12,4 +12,6 @@ public class SetupTest extends BaseUiTest {
                 .setupTeamCityServer()
                 .getHeader().shouldHave(Condition.text("Create Administrator Account"));
     }
+
+
 }

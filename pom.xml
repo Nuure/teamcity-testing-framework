@@ -21,6 +21,7 @@
         <google-gson.version>2.10.1</google-gson.version>
         <assertj-core.version>3.22.0</assertj-core.version>
         <selenide.version>7.0.2</selenide.version>
+        <xml-suite>testng-suites/default.xml</xml-suite>
     </properties>
 
     <dependencies>
@@ -103,8 +104,7 @@
                         </property>
                     </systemProperties>
                     <suiteXmlFiles>
-                        <suiteXmlFile>testng-suites/api-suite.xml</suiteXmlFile>
-                        <suiteXmlFile>testng-suites/ui-suite.xml</suiteXmlFile>
+                        <suiteXmlFile>${xml-suite}</suiteXmlFile>
                     </suiteXmlFiles>
                 </configuration>
                 <dependencies>

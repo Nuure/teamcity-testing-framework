@@ -18,6 +18,7 @@ public class CreateNewProject extends CreateObjectPage {
     }
 
     public CreateNewProject createProjectByUrl(String url) {
+        urlInput.shouldBe(Condition.visible, Duration.ofSeconds(30));
         urlInput.sendKeys(url);
         submit();
         return this;

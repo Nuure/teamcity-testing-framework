@@ -21,10 +21,16 @@ jobs:
           echo "HOST=$(ifconfig | grep -E "([0-9]{1,3}\.){3}[0-9]{1,3}" | grep -v 127.0.0.1 | awk '{ print $2 }' | cut -f2 -d: | head -n1)" >> $GITHUB_ENV
 
       - name: Setup host config.properties
-        run: echo "host=$HOST:8111" >> src/main/resources/config.properties
+        run: |
+          echo "host=$HOST:8111" > src/main/resources/config.properties
+          echo "remote=http://localhost:4444/wd/hub" >> src/main/resources/config.properties
+          echo "browser=firefox" >> src/main/resources/config.properties
 
-      - name: Pull Selenoid Chrome/Firefox/..
-        run: docker pull selenoid/vnc_chrome:119.0
+#      - name: Pull Selenoid Chrome
+#        run: docker pull selenoid/vnc_chrome:119.0
+
+      - name: Pull Selenoid Firefox
+        run: docker pull selenoid/vnc:firefox_89.0
 
       - name: Run Selenoid
         run: |
@@ -32,7 +38,7 @@ jobs:
             --name selenoid \
             -p 4444:4444 \
             -v /var/run/docker.sock:/var/run/docker.sock \
-            -v $(pwd)/config/:/etc/selenoid/:ro \
+            -v $(pwd)/infra/:/etc/selenoid/:ro \
             aerokube/selenoid
 
       - name: Run Selenoid UI
@@ -51,13 +57,16 @@ jobs:
           jetbrains/teamcity-server:latest
 
       - name: Setup TeamCity Server
-        run: ./mvnw clean test -Dtest=SetupFirstStartTest#setupTeamCityServerTest
+        run: ./mvnw clean test -Dtest=SetupTest#setupTeamCityServerTest
 
       - name: Set up superUserToken environment variable
         run: echo "SUPER_USER_TOKEN=$(docker logs teamcity-server | grep 'Super user authentication token' | tail -n 1 | awk '{print $6}')" >> $GITHUB_ENV
 
-      - name: Set up superUserToken config property
+      - name: Set up super user token config property
         run: echo "superUserToken=$SUPER_USER_TOKEN" >> src/main/resources/config.properties
+
+      - name: Verify config.properties
+        run: cat src/main/resources/config.properties
 
       - name: Run TeamCity agent
         run: |
@@ -66,12 +75,13 @@ jobs:
           jetbrains/teamcity-agent:latest
 
       - name: Set up TeamCity agent
-        run: ./mvnw test -Dtest=SetupFirstStartTest#setupTeamCityAgentTest
+        run: ./mvnw test -Dtest=SetupTest#setupTeamCityAgentTest
 
-      - name: Run tests
-        run: ./mvnw test -Dgroups=Regression
+      - name: Setup permissions
+        run: ./mvnw clean test -Dtest=BaseTest#enablePerProjectPermissions
 
+      - name: Run api tests
+        run: ./mvnw test -Dxml-suite=testng-suites/api-suite.xml
 
-          
-
-
+      - name: Run ui tests
+        run: ./mvnw test -Dxml-suite=testng-suites/ui-suite.xml

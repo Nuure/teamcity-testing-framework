@@ -28,7 +28,7 @@ public class Specifications {
     private RequestSpecBuilder requestSpecBuilder() {
         var requestBuilder = new RequestSpecBuilder();
         requestBuilder.addFilters(List.of(new RequestLoggingFilter(), new ResponseLoggingFilter()));
-        requestBuilder.addFilter(new SwaggerCoverageRestAssured(new FileSystemOutputWriter(Paths.get("target/swagger-coverage-output"))));
+//        requestBuilder.addFilter(new SwaggerCoverageRestAssured(new FileSystemOutputWriter(Paths.get("target/swagger-coverage-output"))));
         requestBuilder.setBaseUri("http://" + Config.getProperty("host"));
         requestBuilder.setContentType(ContentType.JSON);
         requestBuilder.setAccept(ContentType.JSON);

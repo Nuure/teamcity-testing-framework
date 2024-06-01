@@ -4,86 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2bc10c72-dd5b-4261-b979-b2300a3da300" name="Changes" comment="add allure reports">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/test.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infra/browsers.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/infra/setup_infra.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/request-examples/authSettings.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/request-examples/buildConfigurationTest.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/enums/BuildPropertyNames.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/enums/RoleType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/generators/RandomData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/generators/TestData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/generators/TestDataGenerator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/generators/TestDataStorage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/models/AuthSettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/models/BuildType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/models/NewProjectDescription.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/models/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/models/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/models/Roles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/models/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/CheckedRequests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/CrudInterface.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/Request.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/UncheckedRequests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/checked/AuthRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/checked/AuthSettingsRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/checked/CheckedBuildConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/checked/CheckedProject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/checked/CheckedUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/unchecked/UncheckedBuildConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/unchecked/UncheckedProject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/unchecked/UncheckedUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/spec/Specifications.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/BrowserSettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/Selectors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/elements/BuildElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/elements/PageElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/elements/ProjectElement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/enums/Errors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/Project.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/admin/CreateNewBuildConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/admin/CreateNewProject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/admin/CreateObjectPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/favorites/FavoritesPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/favorites/ProjectsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/setup/AgentsPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/setup/AgentsUnauthPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/setup/LoginSuperuserPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/setup/StartUpPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/api/BaseApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/api/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/api/BuildConfigurationNegativeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/api/BuildConfigurationPositiveTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/api/CreateProjectNegativeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/api/CreateProjectPositiveTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/api/RolesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/ui/BaseUiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/ui/CreateNewBuildConfigTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/ui/CreateNewProjectTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/ui/SetupTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-cases/smoke_test.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng-suites/api-suite.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng-suites/default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng-suites/ui-suite.xml" afterDir="false" />
-    </list>
+    <list default="true" id="82679e9b-ca4a-449a-8af1-556adfb86144" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -121,11 +42,6 @@
     &quot;accountId&quot;: &quot;25586697-8009-4686-9158-88682956f1fb&quot;
   }
 }</component>
-  <component name="JavaAutoRunManager">
-    <enabled-run-configurations>
-      <run-configuration type="TestNG" name="CreateNewProjectTest.authorizedUserShouldBeAbleCreateNewProject" />
-    </enabled-run-configurations>
-  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -145,95 +61,95 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "HTTP Request.authSettings | GET request to example server.executor": "Run",
-    "HTTP Request.buildConfigurationTest | #1.executor": "Run",
-    "HTTP Request.buildConfigurationTest | #2.executor": "Run",
-    "HTTP Request.buildConfigurationTest | #3.executor": "Run",
-    "HTTP Request.buildConfigurationTest | #4.executor": "Run",
-    "HTTP Request.buildConfigurationTest | auth.executor": "Run",
-    "HTTP Request.buildConfigurationTest | check build status.executor": "Run",
-    "HTTP Request.buildConfigurationTest | create build.executor": "Run",
-    "HTTP Request.buildConfigurationTest | create project.executor": "Run",
-    "HTTP Request.buildConfigurationTest | queue build.executor": "Run",
-    "Maven.teamcity-testing-framework [clean].executor": "Run",
-    "Maven.teamcity-testing-framework [compile].executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "TestNG.BuildConfigurationNegativeTest.buildConfigurationCanNotBeCreatedInNonExistingProject.executor": "Run",
-    "TestNG.BuildConfigurationNegativeTest.buildConfigurationCanNotBeCreatedWithIdMoreThen225Symbols.executor": "Run",
-    "TestNG.BuildConfigurationNegativeTest.buildConfigurationCanNotBeCreatedWithIdStartingWithNumber.executor": "Run",
-    "TestNG.BuildConfigurationNegativeTest.buildConfigurationCanNotBeCreatedWithoutId.executor": "Run",
-    "TestNG.BuildConfigurationNegativeTest.buildConfigurationCanNotBeCreatedWithoutName.executor": "Run",
-    "TestNG.BuildConfigurationNegativeTest.buildConfigurationCanNotBeCreatedWithoutProject.executor": "Run",
-    "TestNG.BuildConfigurationNegativeTest.canNotCreateTwoBuildConfigurationsWithTheSameId.executor": "Run",
-    "TestNG.BuildConfigurationNegativeTest.canNotCreateTwoBuildConfigurationsWithTheSameIdEvenInDifferentProjects.executor": "Run",
-    "TestNG.BuildConfigurationNegativeTest.canNotCreateTwoProjectsWithTheSameNameEvenInDifferentProjects.executor": "Run",
-    "TestNG.BuildConfigurationNegativeTest.canNotCreateTwoProjectsWithTheSameNameEvenInTheOneProject.executor": "Run",
-    "TestNG.BuildConfigurationPositiveTest.buildConfigurationCanBeCreatedTest.executor": "Run",
-    "TestNG.BuildConfigurationPositiveTest.buildConfigurationCanBeCreatedWithIdUpTo225Symbols.executor": "Run",
-    "TestNG.BuildConfigurationPositiveTest.buildConfigurationCanBeCreatedWithLongName.executor": "Debug",
-    "TestNG.BuildConfigurationPositiveTest.buildConfigurationCanBeCreatedWithNameEqualsId.executor": "Run",
-    "TestNG.BuildConfigurationPositiveTest.buildConfigurationCanBeCreatedWithShortId.executor": "Run",
-    "TestNG.BuildConfigurationPositiveTest.buildConfigurationCanBeCreatedWithShortName.executor": "Run",
-    "TestNG.BuildConfigurationPositiveTest.buildConfigurationWithStepsCanBeCreated.executor": "Run",
-    "TestNG.BuildConfigurationPositiveTest.executor": "Run",
-    "TestNG.BuildConfigurationPositiveTest.twoBuildConfigurationsCanBeCreatedInOneProject.executor": "Run",
-    "TestNG.BuildConfigurationPositiveTest.twoBuildConfigurationsWithTheSameNameCanBeCreatedInDifferentProjects.executor": "Run",
-    "TestNG.BuildConfigurationTest.buildConfigurationTest (1).executor": "Run",
-    "TestNG.BuildConfigurationTest.buildConfigurationTest.executor": "Run",
-    "TestNG.CreateNewBuildConfigTest.authorizedUserShouldBeAbleCreateNewBuildConfig.executor": "Run",
-    "TestNG.CreateNewBuildConfigTest.authorizedUserShouldBeAbleCreateNewProject.executor": "Run",
-    "TestNG.CreateNewBuildConfigTest.emptyRequiredFieldsCauseErrorsOnBuildConfigCreation.executor": "Run",
-    "TestNG.CreateNewBuildConfigTest.executor": "Run",
-    "TestNG.CreateNewProjectTest.authUserShouldBeAbleCreateNewProject.executor": "Debug",
-    "TestNG.CreateNewProjectTest.authorizedUserShouldBeAbleCreateNewProject.executor": "Run",
-    "TestNG.CreateNewProjectTest.authorizedUserShouldBeAbleCreateNewProjectAsSubproject.executor": "Run",
-    "TestNG.CreateNewProjectTest.emptyFieldsCauseErrorsOnProjectCreation.executor": "Run",
-    "TestNG.CreateNewProjectTest.emptyRequiredFieldsCauseErrorsOnProjectCreation.executor": "Run",
-    "TestNG.CreateNewProjectTest.executor": "Run",
-    "TestNG.CreateNewProjectTest.missedUrlCauseErrorOnProjectCreation.executor": "Run",
-    "TestNG.CreateProjectNegativeTest.canNotCreateTwoProjectsWithTheSameName.executor": "Run",
-    "TestNG.CreateProjectNegativeTest.executor": "Run",
-    "TestNG.CreateProjectNegativeTest.projectCanNotBeCreatedWithIdMoreThen225Symbols.executor": "Run",
-    "TestNG.CreateProjectNegativeTest.projectCanNotBeCreatedWithIdStartingWithNumber.executor": "Run",
-    "TestNG.CreateProjectNegativeTest.projectCanNotBeCreatedWithNonExistingLocator.executor": "Run",
-    "TestNG.CreateProjectNegativeTest.projectCanNotBeCreatedWithoutId.executor": "Run",
-    "TestNG.CreateProjectNegativeTest.projectCanNotBeCreatedWithoutLocator.executor": "Run",
-    "TestNG.CreateProjectNegativeTest.projectCanNotBeCreatedWithoutName.executor": "Run",
-    "TestNG.CreateProjectPositiveTest.executor": "Run",
-    "TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithAnotherProjectAsParent.executor": "Run",
-    "TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithDuplicateProjectName.executor": "Run",
-    "TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithIdUpTo225Symbols.executor": "Debug",
-    "TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithLongName.executor": "Run",
-    "TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithLongParamsNames.executor": "Run",
-    "TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithNameEqualsId.executor": "Run",
-    "TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithShortId.executor": "Run",
-    "TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithShortName.executor": "Run",
-    "TestNG.CreateProjectTest.canNotCreateTwoProjectsWithSameId.executor": "Run",
-    "TestNG.MainPageTest.navigationToAllTools.executor": "Run",
-    "TestNG.MainPageTest.search.executor": "Run",
-    "TestNG.MainPageTest.toolsMenu.executor": "Run",
-    "TestNG.RolesTest.executor": "Run",
-    "TestNG.RolesTest.projectAdminShouldHaveRightsToCreateBuildConfigToHisProjectTest.executor": "Run",
-    "TestNG.RolesTest.projectAdminShouldNotHaveRightsToCreateBuildConfigToAnotherProjectTest.executor": "Run",
-    "TestNG.RolesTest.projectAdminTest.executor": "Run",
-    "TestNG.RolesTest.systemAdminTest.executor": "Run",
-    "TestNG.RolesTest.unAuthorizedUser.executor": "Debug",
-    "TestNG.SetupTest.setupTeamCityAgentTest.executor": "Run",
-    "TestNG.SetupTest.startUpTest.executor": "Run",
-    "git-widget-placeholder": "homework-qa-control",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2",
-    "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;HTTP Request.authSettings | GET request to example server.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.buildConfigurationTest | #1.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.buildConfigurationTest | #2.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.buildConfigurationTest | #3.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.buildConfigurationTest | #4.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.buildConfigurationTest | auth.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.buildConfigurationTest | check build status.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.buildConfigurationTest | create build.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.buildConfigurationTest | create project.executor&quot;: &quot;Run&quot;,
+    &quot;HTTP Request.buildConfigurationTest | queue build.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.teamcity-testing-framework [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.teamcity-testing-framework [compile].executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;TestNG.BuildConfigurationNegativeTest.buildConfigurationCanNotBeCreatedInNonExistingProject.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuildConfigurationNegativeTest.buildConfigurationCanNotBeCreatedWithIdMoreThen225Symbols.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuildConfigurationNegativeTest.buildConfigurationCanNotBeCreatedWithIdStartingWithNumber.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuildConfigurationNegativeTest.buildConfigurationCanNotBeCreatedWithoutId.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuildConfigurationNegativeTest.buildConfigurationCanNotBeCreatedWithoutName.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuildConfigurationNegativeTest.buildConfigurationCanNotBeCreatedWithoutProject.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuildConfigurationNegativeTest.canNotCreateTwoBuildConfigurationsWithTheSameId.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuildConfigurationNegativeTest.canNotCreateTwoBuildConfigurationsWithTheSameIdEvenInDifferentProjects.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuildConfigurationNegativeTest.canNotCreateTwoProjectsWithTheSameNameEvenInDifferentProjects.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuildConfigurationNegativeTest.canNotCreateTwoProjectsWithTheSameNameEvenInTheOneProject.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuildConfigurationPositiveTest.buildConfigurationCanBeCreatedTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuildConfigurationPositiveTest.buildConfigurationCanBeCreatedWithIdUpTo225Symbols.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuildConfigurationPositiveTest.buildConfigurationCanBeCreatedWithLongName.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.BuildConfigurationPositiveTest.buildConfigurationCanBeCreatedWithNameEqualsId.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuildConfigurationPositiveTest.buildConfigurationCanBeCreatedWithShortId.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuildConfigurationPositiveTest.buildConfigurationCanBeCreatedWithShortName.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuildConfigurationPositiveTest.buildConfigurationWithStepsCanBeCreated.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuildConfigurationPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuildConfigurationPositiveTest.twoBuildConfigurationsCanBeCreatedInOneProject.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuildConfigurationPositiveTest.twoBuildConfigurationsWithTheSameNameCanBeCreatedInDifferentProjects.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuildConfigurationTest.buildConfigurationTest (1).executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.BuildConfigurationTest.buildConfigurationTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateNewBuildConfigTest.authorizedUserShouldBeAbleCreateNewBuildConfig.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateNewBuildConfigTest.authorizedUserShouldBeAbleCreateNewProject.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateNewBuildConfigTest.emptyRequiredFieldsCauseErrorsOnBuildConfigCreation.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateNewBuildConfigTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateNewProjectTest.authUserShouldBeAbleCreateNewProject.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.CreateNewProjectTest.authorizedUserShouldBeAbleCreateNewProject.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateNewProjectTest.authorizedUserShouldBeAbleCreateNewProjectAsSubproject.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateNewProjectTest.emptyFieldsCauseErrorsOnProjectCreation.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateNewProjectTest.emptyRequiredFieldsCauseErrorsOnProjectCreation.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateNewProjectTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateNewProjectTest.missedUrlCauseErrorOnProjectCreation.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateProjectNegativeTest.canNotCreateTwoProjectsWithTheSameName.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateProjectNegativeTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateProjectNegativeTest.projectCanNotBeCreatedWithIdMoreThen225Symbols.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateProjectNegativeTest.projectCanNotBeCreatedWithIdStartingWithNumber.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateProjectNegativeTest.projectCanNotBeCreatedWithNonExistingLocator.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateProjectNegativeTest.projectCanNotBeCreatedWithoutId.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateProjectNegativeTest.projectCanNotBeCreatedWithoutLocator.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateProjectNegativeTest.projectCanNotBeCreatedWithoutName.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateProjectPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithAnotherProjectAsParent.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithDuplicateProjectName.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithIdUpTo225Symbols.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithLongName.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithLongParamsNames.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithNameEqualsId.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithShortId.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithShortName.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.CreateProjectTest.canNotCreateTwoProjectsWithSameId.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MainPageTest.navigationToAllTools.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MainPageTest.search.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.MainPageTest.toolsMenu.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RolesTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RolesTest.projectAdminShouldHaveRightsToCreateBuildConfigToHisProjectTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RolesTest.projectAdminShouldNotHaveRightsToCreateBuildConfigToAnotherProjectTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RolesTest.projectAdminTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RolesTest.systemAdminTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.RolesTest.unAuthorizedUser.executor&quot;: &quot;Debug&quot;,
+    &quot;TestNG.SetupTest.setupTeamCityAgentTest.executor&quot;: &quot;Run&quot;,
+    &quot;TestNG.SetupTest.startUpTest.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;homework-qa-control&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.Java&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.teamcity.ui.elements" />

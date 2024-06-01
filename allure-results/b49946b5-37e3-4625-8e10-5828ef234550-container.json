@@ -1,1 +1,0 @@
-{"uuid":"b49946b5-37e3-4625-8e10-5828ef234550","name":"Default Suite","children":["153a0473-e7ad-4b55-96e2-ad3770ad3689"],"befores":[{"name":"enablePerProjectPermissions","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1715006970112,"stop":1715006971188}],"afters":[],"start":1715006970086,"stop":1715006971786}

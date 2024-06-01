@@ -1,3 +1,0 @@
-Responding with error, status code: 400 (Bad Request).
-Details: jetbrains.buildServer.serverSide.identifiers.DuplicateExternalIdException: Project ID "id" is already used by another project
-Project ID "id" is already used by another project

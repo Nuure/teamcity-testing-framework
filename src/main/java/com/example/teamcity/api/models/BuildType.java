@@ -23,6 +23,7 @@ public class BuildType {
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
+    @JsonIgnoreProperties(ignoreUnknown = true)
     static public class Steps {
         private List<Step> step;
     }
@@ -31,6 +32,7 @@ public class BuildType {
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
+    @JsonIgnoreProperties(ignoreUnknown = true)
     static public class Step {
         private String name;
         private String type;
@@ -41,6 +43,7 @@ public class BuildType {
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
+    @JsonIgnoreProperties(ignoreUnknown = true)
     static public class Properties {
         private List<Property> property;
     }
@@ -49,6 +52,7 @@ public class BuildType {
     @Data
     @AllArgsConstructor
     @NoArgsConstructor
+    @JsonIgnoreProperties(ignoreUnknown = true)
     static public class Property {
         private String name;
         private String value;

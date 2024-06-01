@@ -1,0 +1,32 @@
+{
+  "swagger" : "2.0",
+  "host" : "172.17.0.1",
+  "schemes" : [ "http" ],
+  "consumes" : [ "application/json" ],
+  "produces" : [ "text/plain" ],
+  "paths" : {
+    "/app/rest/users/username:test_SLgpMIdnci" : {
+      "delete" : {
+        "parameters" : [ {
+          "name" : "Accept",
+          "in" : "header",
+          "required" : false,
+          "x-example" : "application/json, application/javascript, text/javascript, text/json"
+        }, {
+          "name" : "Authorization",
+          "in" : "header",
+          "required" : false,
+          "x-example" : "Basic OjM1Mjk4ODU0NzE3NzU4NzY4ODc="
+        }, {
+          "name" : "Content-Type",
+          "in" : "header",
+          "required" : false,
+          "x-example" : "application/json"
+        } ],
+        "responses" : {
+          "404" : { }
+        }
+      }
+    }
+  }
+}

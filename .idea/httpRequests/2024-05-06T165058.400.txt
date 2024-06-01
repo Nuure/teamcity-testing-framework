@@ -1,0 +1,3 @@
+Responding with error, status code: 400 (Bad Request).
+Details: jetbrains.buildServer.serverSide.DuplicateBuildTypeNameException: Build configuration with name "Print hello world" already exists in project: "name"
+Build configuration with name "Print hello world" already exists in project: "name"

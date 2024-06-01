@@ -1,0 +1,46 @@
+{
+  "allowGuest": false,
+  "guestUsername": "guest",
+  "welcomeText": "",
+  "collapseLoginForm": false,
+  "perProjectPermissions": false,
+  "emailVerification": false,
+  "modules": {
+    "module": [
+      {
+        "name": "Default",
+        "properties": {
+          "property": [
+            {
+              "name": "usersCanResetOwnPasswords",
+              "value": "true"
+            },
+            {
+              "name": "usersCanChangeOwnPasswords",
+              "value": "true"
+            },
+            {
+              "name": "freeRegistrationAllowed",
+              "value": "false"
+            }
+          ],
+          "count": 3
+        }
+      },
+      {
+        "name": "Token-Auth",
+        "properties": {
+          "property": [],
+          "count": 0
+        }
+      },
+      {
+        "name": "HTTP-Basic",
+        "properties": {
+          "property": [],
+          "count": 0
+        }
+      }
+    ]
+  }
+}

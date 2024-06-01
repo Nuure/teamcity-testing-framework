@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2bc10c72-dd5b-4261-b979-b2300a3da300" name="Changes" comment="add allure reports">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/test.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infra/browsers.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/infra/setup_infra.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-examples/authSettings.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/request-examples/buildConfigurationTest.http" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/config/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/enums/BuildPropertyNames.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/enums/RoleType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/generators/RandomData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/generators/TestData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/generators/TestDataGenerator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/generators/TestDataStorage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/models/AuthSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/models/BuildType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/models/NewProjectDescription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/models/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/models/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/models/Roles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/CheckedRequests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/CrudInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/Request.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/UncheckedRequests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/checked/AuthRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/checked/AuthSettingsRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/checked/CheckedBuildConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/checked/CheckedProject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/checked/CheckedUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/unchecked/UncheckedBuildConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/unchecked/UncheckedProject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/requests/unchecked/UncheckedUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/api/spec/Specifications.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/BrowserSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/Selectors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/elements/BuildElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/elements/PageElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/elements/ProjectElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/enums/Errors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/Page.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/Project.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/admin/CreateNewBuildConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/admin/CreateNewProject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/admin/CreateObjectPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/favorites/FavoritesPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/favorites/ProjectsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/setup/AgentsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/setup/AgentsUnauthPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/setup/LoginSuperuserPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/teamcity/ui/pages/setup/StartUpPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/api/BaseApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/api/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/api/BuildConfigurationNegativeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/api/BuildConfigurationPositiveTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/api/CreateProjectNegativeTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/api/CreateProjectPositiveTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/api/RolesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/ui/BaseUiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/ui/CreateNewBuildConfigTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/ui/CreateNewProjectTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/example/teamcity/ui/SetupTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-cases/smoke_test.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng-suites/api-suite.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng-suites/default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng-suites/ui-suite.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTTP Request" />
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="homework-ci-cd" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Nuure&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Nuure/teamcity-testing-framework.git&quot;,
+    &quot;accountId&quot;: &quot;25586697-8009-4686-9158-88682956f1fb&quot;
+  }
+}</component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="TestNG" name="CreateNewProjectTest.authorizedUserShouldBeAbleCreateNewProject" />
+    </enabled-run-configurations>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
+  <component name="ProjectId" id="2fbVyOpdgKmKfjNbaIJ6dcfV0Mf" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "HTTP Request.authSettings | GET request to example server.executor": "Run",
+    "HTTP Request.buildConfigurationTest | #1.executor": "Run",
+    "HTTP Request.buildConfigurationTest | #2.executor": "Run",
+    "HTTP Request.buildConfigurationTest | #3.executor": "Run",
+    "HTTP Request.buildConfigurationTest | #4.executor": "Run",
+    "HTTP Request.buildConfigurationTest | auth.executor": "Run",
+    "HTTP Request.buildConfigurationTest | check build status.executor": "Run",
+    "HTTP Request.buildConfigurationTest | create build.executor": "Run",
+    "HTTP Request.buildConfigurationTest | create project.executor": "Run",
+    "HTTP Request.buildConfigurationTest | queue build.executor": "Run",
+    "Maven.teamcity-testing-framework [clean].executor": "Run",
+    "Maven.teamcity-testing-framework [compile].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "TestNG.BuildConfigurationNegativeTest.buildConfigurationCanNotBeCreatedInNonExistingProject.executor": "Run",
+    "TestNG.BuildConfigurationNegativeTest.buildConfigurationCanNotBeCreatedWithIdMoreThen225Symbols.executor": "Run",
+    "TestNG.BuildConfigurationNegativeTest.buildConfigurationCanNotBeCreatedWithIdStartingWithNumber.executor": "Run",
+    "TestNG.BuildConfigurationNegativeTest.buildConfigurationCanNotBeCreatedWithoutId.executor": "Run",
+    "TestNG.BuildConfigurationNegativeTest.buildConfigurationCanNotBeCreatedWithoutName.executor": "Run",
+    "TestNG.BuildConfigurationNegativeTest.buildConfigurationCanNotBeCreatedWithoutProject.executor": "Run",
+    "TestNG.BuildConfigurationNegativeTest.canNotCreateTwoBuildConfigurationsWithTheSameId.executor": "Run",
+    "TestNG.BuildConfigurationNegativeTest.canNotCreateTwoBuildConfigurationsWithTheSameIdEvenInDifferentProjects.executor": "Run",
+    "TestNG.BuildConfigurationNegativeTest.canNotCreateTwoProjectsWithTheSameNameEvenInDifferentProjects.executor": "Run",
+    "TestNG.BuildConfigurationNegativeTest.canNotCreateTwoProjectsWithTheSameNameEvenInTheOneProject.executor": "Run",
+    "TestNG.BuildConfigurationPositiveTest.buildConfigurationCanBeCreatedTest.executor": "Run",
+    "TestNG.BuildConfigurationPositiveTest.buildConfigurationCanBeCreatedWithIdUpTo225Symbols.executor": "Run",
+    "TestNG.BuildConfigurationPositiveTest.buildConfigurationCanBeCreatedWithLongName.executor": "Debug",
+    "TestNG.BuildConfigurationPositiveTest.buildConfigurationCanBeCreatedWithNameEqualsId.executor": "Run",
+    "TestNG.BuildConfigurationPositiveTest.buildConfigurationCanBeCreatedWithShortId.executor": "Run",
+    "TestNG.BuildConfigurationPositiveTest.buildConfigurationCanBeCreatedWithShortName.executor": "Run",
+    "TestNG.BuildConfigurationPositiveTest.buildConfigurationWithStepsCanBeCreated.executor": "Run",
+    "TestNG.BuildConfigurationPositiveTest.executor": "Run",
+    "TestNG.BuildConfigurationPositiveTest.twoBuildConfigurationsCanBeCreatedInOneProject.executor": "Run",
+    "TestNG.BuildConfigurationPositiveTest.twoBuildConfigurationsWithTheSameNameCanBeCreatedInDifferentProjects.executor": "Run",
+    "TestNG.BuildConfigurationTest.buildConfigurationTest (1).executor": "Run",
+    "TestNG.BuildConfigurationTest.buildConfigurationTest.executor": "Run",
+    "TestNG.CreateNewBuildConfigTest.authorizedUserShouldBeAbleCreateNewBuildConfig.executor": "Run",
+    "TestNG.CreateNewBuildConfigTest.authorizedUserShouldBeAbleCreateNewProject.executor": "Run",
+    "TestNG.CreateNewBuildConfigTest.emptyRequiredFieldsCauseErrorsOnBuildConfigCreation.executor": "Run",
+    "TestNG.CreateNewBuildConfigTest.executor": "Run",
+    "TestNG.CreateNewProjectTest.authUserShouldBeAbleCreateNewProject.executor": "Debug",
+    "TestNG.CreateNewProjectTest.authorizedUserShouldBeAbleCreateNewProject.executor": "Run",
+    "TestNG.CreateNewProjectTest.authorizedUserShouldBeAbleCreateNewProjectAsSubproject.executor": "Run",
+    "TestNG.CreateNewProjectTest.emptyFieldsCauseErrorsOnProjectCreation.executor": "Run",
+    "TestNG.CreateNewProjectTest.emptyRequiredFieldsCauseErrorsOnProjectCreation.executor": "Run",
+    "TestNG.CreateNewProjectTest.executor": "Run",
+    "TestNG.CreateNewProjectTest.missedUrlCauseErrorOnProjectCreation.executor": "Run",
+    "TestNG.CreateProjectNegativeTest.canNotCreateTwoProjectsWithTheSameName.executor": "Run",
+    "TestNG.CreateProjectNegativeTest.executor": "Run",
+    "TestNG.CreateProjectNegativeTest.projectCanNotBeCreatedWithIdMoreThen225Symbols.executor": "Run",
+    "TestNG.CreateProjectNegativeTest.projectCanNotBeCreatedWithIdStartingWithNumber.executor": "Run",
+    "TestNG.CreateProjectNegativeTest.projectCanNotBeCreatedWithNonExistingLocator.executor": "Run",
+    "TestNG.CreateProjectNegativeTest.projectCanNotBeCreatedWithoutId.executor": "Run",
+    "TestNG.CreateProjectNegativeTest.projectCanNotBeCreatedWithoutLocator.executor": "Run",
+    "TestNG.CreateProjectNegativeTest.projectCanNotBeCreatedWithoutName.executor": "Run",
+    "TestNG.CreateProjectPositiveTest.executor": "Run",
+    "TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithAnotherProjectAsParent.executor": "Run",
+    "TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithDuplicateProjectName.executor": "Run",
+    "TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithIdUpTo225Symbols.executor": "Debug",
+    "TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithLongName.executor": "Run",
+    "TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithLongParamsNames.executor": "Run",
+    "TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithNameEqualsId.executor": "Run",
+    "TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithShortId.executor": "Run",
+    "TestNG.CreateProjectPositiveTest.projectCanBeCreatedWithShortName.executor": "Run",
+    "TestNG.CreateProjectTest.canNotCreateTwoProjectsWithSameId.executor": "Run",
+    "TestNG.MainPageTest.navigationToAllTools.executor": "Run",
+    "TestNG.MainPageTest.search.executor": "Run",
+    "TestNG.MainPageTest.toolsMenu.executor": "Run",
+    "TestNG.RolesTest.executor": "Run",
+    "TestNG.RolesTest.projectAdminShouldHaveRightsToCreateBuildConfigToHisProjectTest.executor": "Run",
+    "TestNG.RolesTest.projectAdminShouldNotHaveRightsToCreateBuildConfigToAnotherProjectTest.executor": "Run",
+    "TestNG.RolesTest.projectAdminTest.executor": "Run",
+    "TestNG.RolesTest.systemAdminTest.executor": "Run",
+    "TestNG.RolesTest.unAuthorizedUser.executor": "Debug",
+    "TestNG.SetupTest.setupTeamCityAgentTest.executor": "Run",
+    "TestNG.SetupTest.startUpTest.executor": "Run",
+    "git-widget-placeholder": "homework-qa-control",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.teamcity.ui.elements" />
+      <recent name="com.example.teamcity.api.enums" />
+      <recent name="com.example.teamcity.api.models" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn compile" />
+    </option>
+  </component>
+  <component name="RunManager" selected="TestNG.CreateNewProjectTest.authorizedUserShouldBeAbleCreateNewProject">
+    <configuration name="BuildConfigurationNegativeTest.buildConfigurationCanNotBeCreatedWithoutProject" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="teamcity-testing-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.teamcity.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.teamcity.api" />
+      <option name="MAIN_CLASS_NAME" value="com.example.teamcity.api.BuildConfigurationNegativeTest" />
+      <option name="METHOD_NAME" value="buildConfigurationCanNotBeCreatedWithoutProject" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BuildConfigurationPositiveTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="teamcity-testing-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.teamcity.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.teamcity.api" />
+      <option name="MAIN_CLASS_NAME" value="com.example.teamcity.api.BuildConfigurationPositiveTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BuildConfigurationPositiveTest.buildConfigurationWithStepsCanBeCreated" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="teamcity-testing-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.teamcity.api.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.teamcity.api" />
+      <option name="MAIN_CLASS_NAME" value="com.example.teamcity.api.BuildConfigurationPositiveTest" />
+      <option name="METHOD_NAME" value="buildConfigurationWithStepsCanBeCreated" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateNewProjectTest.authUserShouldBeAbleCreateNewProject" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="teamcity-testing-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.teamcity.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.teamcity.ui" />
+      <option name="MAIN_CLASS_NAME" value="com.example.teamcity.ui.CreateNewProjectTest" />
+      <option name="METHOD_NAME" value="authUserShouldBeAbleCreateNewProject" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateNewProjectTest.authorizedUserShouldBeAbleCreateNewProject" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="teamcity-testing-framework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.teamcity.ui.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.teamcity.ui" />
+      <option name="MAIN_CLASS_NAME" value="com.example.teamcity.ui.CreateNewProjectTest" />
+      <option name="METHOD_NAME" value="authorizedUserShouldBeAbleCreateNewProject" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.CreateNewProjectTest.authUserShouldBeAbleCreateNewProject" />
+        <item itemvalue="TestNG.CreateNewProjectTest.authorizedUserShouldBeAbleCreateNewProject" />
+        <item itemvalue="TestNG.BuildConfigurationPositiveTest.buildConfigurationWithStepsCanBeCreated" />
+        <item itemvalue="TestNG.BuildConfigurationPositiveTest" />
+        <item itemvalue="TestNG.BuildConfigurationNegativeTest.buildConfigurationCanNotBeCreatedWithoutProject" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SeleniumInternalSettingsState">
+    <option name="lastFrameworkName" value="FluentLenium" />
+    <option name="lastLanguageId" value="JAVA" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2bc10c72-dd5b-4261-b979-b2300a3da300" name="Changes" comment="" />
+      <created>1714070018886</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1714070018886</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Create framework and add api tests">
+      <option name="closed" value="true" />
+      <created>1715012855350</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1715012855350</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Advanced hm, non-working version">
+      <option name="closed" value="true" />
+      <created>1715797345856</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1715797345856</updated>
+    </task>
+    <task id="LOCAL-00003" summary="UI tests from lectures">
+      <option name="closed" value="true" />
+      <created>1716048250204</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1716048250204</updated>
+    </task>
+    <task id="LOCAL-00004" summary="UI homework">
+      <option name="closed" value="true" />
+      <created>1716081168731</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1716081168731</updated>
+    </task>
+    <task id="LOCAL-00005" summary="UI homework - fix comment - added api checks">
+      <option name="closed" value="true" />
+      <created>1716236411820</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716236411821</updated>
+    </task>
+    <task id="LOCAL-00006" summary="ci/cd lectures">
+      <option name="closed" value="true" />
+      <created>1716645922260</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1716645922260</updated>
+    </task>
+    <task id="LOCAL-00007" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716650690231</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716650690231</updated>
+    </task>
+    <task id="LOCAL-00008" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716651999340</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716651999340</updated>
+    </task>
+    <task id="LOCAL-00009" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716652821370</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716652821370</updated>
+    </task>
+    <task id="LOCAL-00010" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716653623524</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1716653623524</updated>
+    </task>
+    <task id="LOCAL-00011" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716654136292</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716654136293</updated>
+    </task>
+    <task id="LOCAL-00012" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716654461204</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1716654461204</updated>
+    </task>
+    <task id="LOCAL-00013" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716655388743</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1716655388743</updated>
+    </task>
+    <task id="LOCAL-00014" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716655569924</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1716655569924</updated>
+    </task>
+    <task id="LOCAL-00015" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716656480807</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1716656480807</updated>
+    </task>
+    <task id="LOCAL-00016" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716656703550</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1716656703551</updated>
+    </task>
+    <task id="LOCAL-00017" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716656896093</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1716656896093</updated>
+    </task>
+    <task id="LOCAL-00018" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716657713552</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1716657713552</updated>
+    </task>
+    <task id="LOCAL-00019" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716660549327</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1716660549327</updated>
+    </task>
+    <task id="LOCAL-00020" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716660906926</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1716660906926</updated>
+    </task>
+    <task id="LOCAL-00021" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716661804838</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1716661804838</updated>
+    </task>
+    <task id="LOCAL-00022" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716663502663</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1716663502663</updated>
+    </task>
+    <task id="LOCAL-00023" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716664572405</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1716664572405</updated>
+    </task>
+    <task id="LOCAL-00024" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716665063956</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1716665063956</updated>
+    </task>
+    <task id="LOCAL-00025" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716666231255</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1716666231255</updated>
+    </task>
+    <task id="LOCAL-00026" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716666669469</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1716666669469</updated>
+    </task>
+    <task id="LOCAL-00027" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716667135539</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1716667135539</updated>
+    </task>
+    <task id="LOCAL-00028" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716667384466</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1716667384466</updated>
+    </task>
+    <task id="LOCAL-00029" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716668630533</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1716668630533</updated>
+    </task>
+    <task id="LOCAL-00030" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716668848037</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1716668848037</updated>
+    </task>
+    <task id="LOCAL-00031" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716669848158</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1716669848158</updated>
+    </task>
+    <task id="LOCAL-00032" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716671198677</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1716671198677</updated>
+    </task>
+    <task id="LOCAL-00033" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716674438152</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1716674438152</updated>
+    </task>
+    <task id="LOCAL-00034" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716675126282</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1716675126282</updated>
+    </task>
+    <task id="LOCAL-00035" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716676531989</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1716676531989</updated>
+    </task>
+    <task id="LOCAL-00036" summary="ci/cd homework">
+      <option name="closed" value="true" />
+      <created>1716677308896</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1716677308897</updated>
+    </task>
+    <task id="LOCAL-00037" summary="add allure reports">
+      <option name="closed" value="true" />
+      <created>1717246510461</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1717246510461</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Create framework and add api tests" />
+    <MESSAGE value="Advanced hm, non-working version" />
+    <MESSAGE value="UI tests from lectures" />
+    <MESSAGE value="UI homework" />
+    <MESSAGE value="UI homework - fix comment - added api checks" />
+    <MESSAGE value="ci/cd lectures" />
+    <MESSAGE value="ci/cd homework" />
+    <MESSAGE value="add allure reports" />
+    <option name="LAST_COMMIT_MESSAGE" value="add allure reports" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand>
+      <path>
+        <item name="teamcity-testing-framework" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file:///Users/alina/AquaProjects/teamcity-testing-framework}" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
+    <select />
+  </component>
+</project>

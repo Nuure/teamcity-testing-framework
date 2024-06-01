@@ -1,0 +1,3 @@
+Responding with error, status code: 400 (Bad Request).
+Details: jetbrains.buildServer.server.rest.errors.LocatorProcessException: Error processing locator 'Id:2,branch:(default:true),canceled:false,count:1,failedToStart:false,personal:false,state:finished': Locator dimension [Id] is unknown. Supported dimensions are: [id, taskId, project, affectedProject, buildType, branch, agent, agentName, agentTypeId, user, personal, state, tag, property, compatibleAgent, number, status, canceled, pinned, queuedDate, startDate, finishDate, sinceBuild, sinceDate, untilBuild, untilDate, failedToStart, snapshotDependency, artifactDependency, hanging, composite, history, defaultFilter, $singleValue, start, lookupLimit]
+Invalid request. Check locator is specified correctly.

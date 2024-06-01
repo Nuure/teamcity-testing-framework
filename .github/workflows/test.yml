@@ -125,11 +125,11 @@ jobs:
             target/swagger-coverage-output/swagger-coverage-report.html
             target/swagger-coverage-output/swagger-coverage-results.json
 
-      # Swagger coverage репорт сохраняется в артефакты GitHub Actions прогона
-      - name: Publish Swagger coverage
-        uses: peaceiris/actions-gh-pages@v3
-        if: always()
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: target/swagger-coverage-output
+#      # Swagger coverage репорт сохраняется в артефакты GitHub Actions прогона
+#      - name: Publish Swagger coverage
+#        uses: peaceiris/actions-gh-pages@v3
+#        if: always()
+#        with:
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+#          publish_branch: gh-pages
+#          publish_dir: target/swagger-coverage-output

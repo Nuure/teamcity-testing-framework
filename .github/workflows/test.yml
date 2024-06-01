@@ -102,13 +102,13 @@ jobs:
           allure_history: allure-history
           allure_results: target/allure-results
 
-      - name: Publish test report
-        uses: peaceiris/actions-gh-pages@v3
-        if: always()
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: gh-pages
-          publish_dir: allure-history
+#      - name: Publish test report
+#        uses: peaceiris/actions-gh-pages@v3
+#        if: always()
+#        with:
+#          github_token: ${{ secrets.GITHUB_TOKEN }}
+#          publish_branch: gh-pages
+#          publish_dir: allure-history
 
       # Создание репорта с покрытием API тестов, основанного на Swagger. Документация: https://github.com/viclovsky/swagger-coverage
       - name: Run Swagger coverage
@@ -122,13 +122,14 @@ jobs:
         with:
           name: swagger-coverage
           path: |
-            swagger-coverage-report.html
+            index.html
+#            swagger-coverage-report.html
             swagger-coverage-results.json
 
-#      - name: Publish Swagger coverage
-#        uses: peaceiris/actions-gh-pages@v3
-#        if: always()
-#        with:
-#          github_token: ${{ secrets.GITHUB_TOKEN }}
-#          publish_branch: gh-pages
-#          publish_dir: swagger-coverage/swagger-coverage-report.html
+      - name: Publish Swagger coverage
+        uses: peaceiris/actions-gh-pages@v3
+        if: always()
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: swagger-coverage/index.html

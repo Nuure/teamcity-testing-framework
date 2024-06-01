@@ -123,7 +123,6 @@ jobs:
           name: swagger-coverage
           path: |
             index.html
-#            swagger-coverage-report.html
             swagger-coverage-results.json
 
       - name: Publish Swagger coverage
